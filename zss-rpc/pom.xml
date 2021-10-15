@@ -19,6 +19,7 @@
         <module>zss-rpc-core</module>
         <module>zss-rpc-consumer</module>
         <module>zss-rpc-registry</module>
+        <module>zss-rpc-protocol</module>
     </modules>
 
     <properties>
@@ -39,26 +40,31 @@
                 <artifactId>zss-rpc-core</artifactId>
                 <version>${zss.rpc.version}</version>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>org.zss.rpc</groupId>-->
-<!--                <artifactId>zss-rpc-consumer</artifactId>-->
-<!--                <version>${zss.rpc.version}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>org.zss.rpc</groupId>-->
-<!--                <artifactId>zss-rpc-registry</artifactId>-->
-<!--                <version>${zss.rpc.version}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>org.zss.rpc</groupId>-->
-<!--                <artifactId>zss-rpc-provider</artifactId>-->
-<!--                <version>${zss.rpc.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>org.zss.rpc</groupId>
+                <artifactId>zss-rpc-consumer</artifactId>
+                <version>${zss.rpc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.zss.rpc</groupId>
+                <artifactId>zss-rpc-registry</artifactId>
+                <version>${zss.rpc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.zss.rpc</groupId>
+                <artifactId>zss-rpc-provider</artifactId>
+                <version>${zss.rpc.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
                 <version>4.1.69.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>com.caucho</groupId>
+                <artifactId>hessian</artifactId>
+                <version>4.0.65</version>
             </dependency>
 
             <!--zookeeper-->
@@ -84,16 +90,18 @@
                 <artifactId>jackson-databind</artifactId>
                 <version>${jackson.version}</version>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>com.fasterxml.jackson.core</groupId>-->
-<!--                <artifactId>jackson-core</artifactId>-->
-<!--                <version>${jackson.version}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>com.fasterxml.jackson.core</groupId>-->
-<!--                <artifactId>jackson-annotations</artifactId>-->
-<!--                <version>${jackson.version}</version>-->
-<!--            </dependency>-->
+            <!--
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            -->
 <!--            <dependency>-->
 <!--                <groupId>org.codehaus.jackson</groupId>-->
 <!--                <artifactId>jackson-mapper-asl</artifactId>-->
