@@ -7,7 +7,7 @@ public class RpcFuture<T> {
     private Promise<T> promise;
     private long timeout;
 
-    RpcFuture(Promise<T> promise, long timeout){
+    public RpcFuture(Promise<T> promise, long timeout){
         this.promise = promise;
         this.timeout = timeout;
     }

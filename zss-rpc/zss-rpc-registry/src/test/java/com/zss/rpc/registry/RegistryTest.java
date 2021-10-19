@@ -13,7 +13,7 @@ public class RegistryTest {
     @Before
     public void before(){
         try {
-            registryService = RegisterServiceFactory.getInstance("81.69.4.34:2181",RegistryType.ZOOKEEPER);
+            registryService = RegistryServiceFactory.getInstance("81.69.4.34:2181",RegistryType.ZOOKEEPER);
         } catch (Exception e) {
             e.printStackTrace();
         }
